@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <title>HTML Template</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="page-title">WELCOME USER</h1>
+    </header>
+
+    <main class="box-flex">
+      <div class="box-border-left">
+        <h2 class="box-h1">README.TXT</h2>
+
+        <h3>Using ID and CLASS attributes in CSS</h3>
+        <p>
+          The building blocks of CSS are called Rulesets: div { text-align:
+          left;} These Rulesets are made up of two parts. The selector, which in
+          this case is the [div] , which indicates the HTML element to be styled
+          by your CSS code. The second part is the declaration block which is
+          held within these two parameters { } describes what aspect of the tag
+          is to be styled and then how it is to be styled. Selectors then, are a
+          useful way of identifying which HTML tags you want to style via your
+          CSS sheet, if we used the above CSS Ruleset we would be to align all
+          our HTML [div] blocks to the left. But what if we want certain [div] s
+          to behave differently than others?
+        </p>
+
+        <h4>Attributes and Selectors</h4>
+        <p>
+          Attributes can be applied to our selectors in order to achieve just
+          that. The two main selectors you will generally be using are called:
+          #id attributes (identified by its # prefix) and .class attributes
+          (identified by its . prefix) #id attributes can only be used to style
+          a particular, individual, HTML tag, so you can’t use it more than
+          once. Whereas a .class attribute can be used for… a whole class of
+          HTML tags.
+        </p>
+
+        <h4>Best Practice</h4>
+        <p>
+          Because of their multi-use applicability, .class attributes are
+          considered the most efficient way to interface between CSS and HTML
+          tags. A CSS stylesheet will be a lot easier to navigate, and a lot
+          smaller, if you can stick to using attribute .classes. However, #id
+          attributes do have a specific utility within browsers, that .class
+          attributes do not. Because they are used for a single HTML element,
+          they can be used by the browser as a link to a specific part of the
+          web page. If you apply an #id to an element you can create a URL that
+          links directly to that element. In general it is best practice to
+          forgo the use of #id attributes in favour of .class attributes as this
+          creates a far more streamlined CSS stylesheet.
+        </p>
+      </div>
+
+      <nav class="box-border-right">
+        <h2 class="box-h1">NAVIGATION</h2>
+        <button
+          type="button"
+          class="box-button"
+          onclick="window.location.href = '../index.html'"
+        >
+          HOME
+        </button>
+
+        <button
+          type="button"
+          class="box-button"
+          onclick="window.location.href = 'Sprint-1-Identity-Values.html'"
+        >
+          Identity-Values
+        </button>
+
+        <button
+          type="button"
+          class="box-button"
+          onclick="window.location.href = 'Sprint-2-Learning-Plan.html'"
+        >
+          Learning-Plan
+        </button>
+
+        <button
+          type="button"
+          class="box-button"
+          onclick="window.location.href = 'te-houtaewa-template.html'"
+        >
+          te-houtaewa
+        </button>
+      </nav>
+    </main>
+  </body>
+</html>
